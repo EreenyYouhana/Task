@@ -35,7 +35,7 @@ public class RNAndroidLibraryModule extends ReactContextBaseJavaModule {
       public void onCaptureComplete(Bitmap bitmap) {
         onCaptureComplete.invoke(encodeToBase64(bitmap));
       }
-      
+
       @Override
       public void onCaptureFailed(Throwable e) {
         super.onCaptureFailed(e);

@@ -53,7 +53,7 @@ export default class App extends Component {
       return  <Text style={styles.welcome}>{this.state.error}</Text>
     }else if(this.state.image !== null){
     var base64Icon = `data:image/png;base64,${this.state.image}`;
-    return <Image style={{ width: 200, height: 150, resizeMode: Image.resizeMode.contain, borderWidth: 1, borderColor: 'red' }} 
+    return <Image style={styles.image} 
     source={{ uri: base64Icon }} />
     }
   }
@@ -71,9 +71,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  image: {
+    width: 200,
+    height: 150, 
+    resizeMode: Image.resizeMode.contain, 
+    borderWidth: 2, 
+    borderColor: 'red' 
   },
 });
