@@ -1,0 +1,5 @@
+rootProject.name = 'AndroidApp'
+include ':react-native-android-library'
+project(':react-native-android-library').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-library/android')
+
+include ':app'
