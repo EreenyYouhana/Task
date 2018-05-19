@@ -19,7 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight style={styles.welcome} onPress={() => this.getMethod()}>
+        <TouchableHighlight onPress={() => this.getMethod()}>
         <Text style={styles.welcome}>
           GET Method!
           </Text>
